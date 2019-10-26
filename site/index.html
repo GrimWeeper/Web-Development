@@ -1,9 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello Coursera</title>
+	<meta charset="utf-8">
+	<title>My Page</title>
+	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<h1>Hello Coursera! It is a wonderful website</h1>
+	<header>
+		<ul id="Home">
+		<li><a id="a1" href="#Home">Home</a></li>
+		<li><a id="a1" href="#About_me">About me</a></li>
+		<li><a id="a1" href="#My_work">My work</a></li>
+		<li><a id="a1" href="#Contact-me">Contact me</a></li>
+	</ul>
+	</header>
+	
+	<div class="slideshow">
+  	<img class="mySlides" src="ss1.png" style="width:100%">
+  	<img class="mySlides" src="ss2.png" style="width:100%">
+  	<img class="mySlides" src="ss3.png" style="width:100%">
+	</div>
+
+	<h1 class="center">Fatima Ehsan</h1>
+
+	<h2 class="center">Front end web development</h2>
+	<br>
+	
+	<section id="About_me">
+		<h2  style="text-align: center;">About me</h2>
+		<p id="firstpara">
+			As you can tell, my name is Fatima Ehsan. I am a techie. I love to code and challenge my mind. I love getting stuck in a complex problem which keeps my mind occupied until I can find a solution. 
+			I have a creative side to me, that is why I have gone into full stack development. 
+
+			<br>
+			I am also a machine learning enthusiast and love to get my hands dirty with a good ML project.
+			I am making this website as a front end development project to showcase my skills and hopefully I will keep on tinkering it until I make it perfect. Although I have only a limited time on my hands. That being 24 hours until the interview. 
+			</p>
+
+			<p id="secondpara">
+			<br>
+			I am also a machine learning enthusiast and love to get my hands dirty with a good ML project.
+			I am making this website as a front end development project to showcase my skills and hopefully I will keep on tinkering it until I make it perfect. Although I have only a limited time on my hands. That being 24 hours until the interview. 
+
+			<br>
+			<br>
+			I am also a machine learning enthusiast and love to get my hands dirty with a good ML project.
+			I am making this website as a front end development project to showcase my skills and hopefully I will keep on tinkering it until I make it perfect. Although I have only a limited time on my hands. That being 24 hours until the interview. 
+		</p>
+	</section>
+
+	<section id="My_work">
+		<br>
+		<h2 class="center">
+		MY WORK!
+	    </h2>
+		<br>
+		<div class="gallery">
+			<figure class="gallery__item--1">
+    			<img src="image-1.jpg" class="gallery__img" alt="Image 1">
+  			</figure>
+ 			 <figure class="gallery__item--2">
+    			<img src="image-2.jpg" class="gallery__img" alt="Image 2">
+  			</figure>
+  			<figure class="gallery__item--3">
+    			<img src="image-3.jpg" class="gallery__img" alt="Image 3">
+  			</figure>
+  			<figure class="gallery__item--4">
+   				 <img src="image-4.jpg" class="gallery__img" alt="Image 4">
+  			</figure>
+  			<figure class="gallery__item--5">
+    			<img src="image-5.jpg" class="gallery__img" alt="Image 5">
+  			</figure>
+  			<figure class="gallery__item--6">
+    			<img src="image-6.jpg" class="gallery__img" alt="Image 6">
+  			</figure>
+		</div>
+
+	</section>
+
+	<section id="Contact-me">
+		<br>
+		<h2 class="center">
+		Contact Me!
+	    </h2>
+		<form>      
+  			<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+  			<input name="email" type="text" class="feedback-input" placeholder="Email" />
+  			<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  			<input type="submit" value="SUBMIT"/>
+		</form>
+	</section>
+	<p style="margin:20px">My facebook page</p>
+	<a class="center" style="margin:20px" href="https://www.facebook.com/fatima.ehsan.35912">Fatima Ehsan</a>
+	
+
+<footer>
+	<br>
+	Fatima Ehsan &copy;copyrights, 2019
+
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 </body>
 </html>
